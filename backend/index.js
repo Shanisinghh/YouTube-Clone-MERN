@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://you-tube-clone-mern-gilt.vercel.app/",
+    "https://you-tube-clone-mern-gilt.vercel.app",
   ],
   credentials: true,
 }));

@@ -143,11 +143,13 @@ function Navbar() {
               <FaRegCircleUser className="text-[33px]  text-blue-700" />
             ) : (
               user?.user?.avatar && (
-                <img
+              <div className="w-9 h-9 bg-gray-400 overflow-hidden rounded-full">
+                  <img
                   src={user.user.avatar}
-                  className="w-full   rounded-full"
-                  alt=""
+                  className="w-full h-full text-xs  rounded-full"
+                  alt="avatar"
                 />
+              </div>
               )
             )}
           </div>
@@ -184,11 +186,13 @@ function Navbar() {
                 className="flex text-[red] mdd:pr-2.5 md:pr-2.5 text-xs  px-3 md:px-0 mdd:px-0  py-1  mdd:py-0 md:text-base items-center gap-2 bg-gray-100  rounded-3xl outline-none border border-gray-300  font-semibold cursor-pointer hover:bg-gray-200"
                 onClick={handleLogout}
               >
-                <img
+                <div className="h-9 w-9 mdd:h-6 bg-gray-400 md:h-9 rounded-full hidden mdd:block">
+                  <img
                   src={user.user.avatar}
-                  className=" h-9 mdd:h-6  md:h-9 rounded-full hidden mdd:block"
-                  alt=""
-                />{" "}
+                  className=" h-full w-full rounded-full text-xs text-blue-700"
+                  alt="avatar"
+                />
+               </div>{" "}
                 Log out
               </button>
             </Link>

@@ -33,7 +33,7 @@ function UploadVideo() {
   const baseURL =
     window.location.hostname === "localhost"
       ? "http://localhost:3000"
-      : "https://youtube-clone-qe2y.onrender.com";
+      : "https://youtube-clone-mern-9zqp.onrender.com";
 
   // this function will upload the video
   async function handleUpload(e) {

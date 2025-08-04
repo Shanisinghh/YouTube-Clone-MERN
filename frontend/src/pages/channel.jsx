@@ -25,7 +25,7 @@ function Chennel() {
   const baseURL =
     window.location.hostname === "localhost"
       ? "http://localhost:3000"
-      : "https://youtube-clone-qe2y.onrender.com";
+      : "https://youtube-clone-mern-9zqp.onrender.com";
   //fetch user from backend
   useEffect(() => {
     axios
